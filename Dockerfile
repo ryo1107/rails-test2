@@ -1,5 +1,7 @@
 FROM ruby:2.6.0
-RUN apt-get update -qq && apt-get install -y build-essential nodejs
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - \
+        && apt-get install -y nodejs
+RUN apt-get update -qq && apt-get install -y build-essential
 RUN mkdir /app
 WORKDIR /app
 COPY Gemfile /app/Gemfile
