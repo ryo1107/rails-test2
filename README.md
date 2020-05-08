@@ -43,3 +43,7 @@ $ docker-compose up -d
 
 # RailsのコンテナでDB作成のタスクを実行するコマンド
 $ docker-compose run web bundle exec rails db:create
+
+# docker-compose up -d後
+$ docker-compose.exe run web bundle exec rails db:creat
+$ docker-compose.exe run web bundle exec rails db:migrate
