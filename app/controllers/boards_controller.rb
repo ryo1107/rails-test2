@@ -9,7 +9,6 @@ class BoardsController < ApplicationController
 
   def create
     Board.create(board_params)
-    redirect_to board
   end
 
   def show
